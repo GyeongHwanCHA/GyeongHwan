@@ -1,47 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Contact — Minimal</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경환 — 변속기 품질 엔지니어 포트폴리오</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="container">
-<h1 class="sr-only">문의하기</h1>
+  <header class="header">
+    <div class="container header-content">
+      <h1>경환 — 변속기 품질 엔지니어</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">소개</a></li>
+          <li><a href="#skills">역량</a></li>
+          <li><a href="#experience">경력</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#contact">연락</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <section id="about" class="section">
+    <div class="container">
+      <h2>소개</h2>
+      <p>
+        변속기 및 감속기 기어류의 품질보증을 담당하며, 고객 클레임의 원인 규명과 실무적 대책 수립을 통해
+        개선안의 현장 적용과 비용 절감에 기여합니다. 데이터 기반 의사결정과 체계적 문서화를 통해
+        품질경영 시스템의 신뢰성을 높이는 데 주력하고 있습니다.
+      </p>
+    </div>
+  </section>
 
-<form id="contactForm" class="form" novalidate>
-<label class="field">
-<span class="label-text">이름</span>
-<input type="text" name="name" id="name" required autocomplete="name" />
-</label>
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2>핵심 역량</h2>
+      <ul class="skills-list">
+        <li>변속기 품질관리 (클레임 분석·원인 규명)</li>
+        <li>통계적 공정관리 (SPC) & FMEA</li>
+        <li>측정 시스템 분석 (MSA)</li>
+        <li>신뢰성 시험 기획 및 결과 해석</li>
+        <li>루트코즈 분석 (8D, 5WHY, Fishbone)</li>
+        <li>문서화 (공적조서·보고서·절차서)</li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>주요 경력</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>변속기 기어류 제조사 (품질보증팀)</h3>
+          <span>20XX - 현재</span>
+          <p>
+            국내/해외 고객 필드클레임 대응, 원인분석, 대책 수립 및 예방활동 주도. 
+            제조공정과 설계부서와의 협업으로 공정 개선 추진.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>품질 개선 프로젝트 리드</h3>
+          <span>20XX</span>
+          <p>
+            고객 클레임 비용 절감 및 반복 불량 제거를 목표로 한 개선 활동 주도.
+            통계 기반 공정관리 도입 및 교육 수행.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<label class="field">
-<span class="label-text">이메일</span>
-<input type="email" name="email" id="email" required autocomplete="email" />
-</label>
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>프로젝트</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-tag="all">전체</button>
+        <button class="filter-btn" data-tag="클레임 관리">클레임 관리</button>
+        <button class="filter-btn" data-tag="기술문서화">기술문서화</button>
+      </div>
 
+      <div class="projects-grid">
+        <div class="project-card" data-tag="클레임 관리">
+          <h3>고객 필드클레임 비용 이의 제기 프로세스 개선</h3>
+          <p>
+            월 단위 발생 클레임 비용에 대한 이의제기 및 근거 문서화 체계 구축으로
+            비용 재심사 및 절감 효과 달성.
+          </p>
+        </div>
+        <div class="project-card" data-tag="기술문서화">
+          <h3>감속기 DIFF GEAR ASSY 동력흐름 시각화 도구 개발</h3>
+          <p>
+            도면·사진 기반 동력 흐름 도식 템플릿을 만들어 엔지니어링 커뮤니케이션을 표준화.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<label class="field">
-<span class="label-text">메시지</span>
-<textarea name="message" id="message" rows="5" required></textarea>
-</label>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>연락</h2>
+      <p>업무 협업, 품질 관련 기술 자문, 프로젝트 논의 환영합니다.</p>
+      <a href="mailto:youremail@example.com" class="btn">메일 보내기</a>
+      <a href="#" class="btn secondary">이력서 다운로드</a>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <p>© <span id="year"></span> 경환 — 변속기 품질 엔지니어 포트폴리오</p>
+  </footer>
 
-<div class="actions">
-<button type="submit" class="btn">전송</button>
-</div>
-
-
-<div id="thanks" class="thanks" role="status" aria-live="polite" hidden>
-감사합니다
-</div>
-</form>
-</main>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
