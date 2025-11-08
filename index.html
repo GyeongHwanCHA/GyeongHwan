@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Minimal</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<h1 class="sr-only">문의하기</h1>
+
+
+<form id="contactForm" class="form" novalidate>
+<label class="field">
+<span class="label-text">이름</span>
+<input type="text" name="name" id="name" required autocomplete="name" />
+</label>
+
+
+<label class="field">
+<span class="label-text">이메일</span>
+<input type="email" name="email" id="email" required autocomplete="email" />
+</label>
+
+
+<label class="field">
+<span class="label-text">메시지</span>
+<textarea name="message" id="message" rows="5" required></textarea>
+</label>
+
+
+<div class="actions">
+<button type="submit" class="btn">전송</button>
+</div>
+
+
+<div id="thanks" class="thanks" role="status" aria-live="polite" hidden>
+감사합니다
+</div>
+</form>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
